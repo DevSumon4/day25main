@@ -1,0 +1,310 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+.container {
+  width: 1300px;
+  max-width: 95vw;
+  margin: 0 auto;
+}
+.btn {
+  border: none;
+  outline: none;
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 1rem 1.5rem;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+body {
+  font-family: sans-serif;
+}
+/* ////////===== >>>>> pricing section */
+.pricing {
+  background-color: #f6f9fc;
+  font-size: 1.6rem;
+  padding: 3rem;
+}
+.pricing__content {
+  text-align: center;
+}
+.pricing__main {
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+.pricing__sub {
+  color: #819ff2;
+  text-transform: uppercase;
+}
+.pricing__divider {
+  background-color: #819ff2;
+  color: #819ff2;
+  width: 4rem;
+  height: 0.3rem;
+  border: none;
+  margin: 1rem auto;
+}
+.pricing__text {
+  padding: 0 42rem;
+  color: #525252;
+  line-height: 2.5rem;
+}
+.pricing__card__box {
+  display: flex;
+  justify-content: space-between;
+  margin: 4.5rem 0;
+}
+.pricing__card__item {
+  background-color: #fff;
+  width: 31%;
+  text-align: center;
+  padding: 7rem 5rem;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+}
+
+.pricing__card__heading {
+  font-size: 2rem;
+}
+.pricing__card__amount {
+  font-size: 4rem;
+  margin-top: 1.7rem;
+}
+.pricing__card__price {
+}
+.pricing__card__list__box {
+  margin: 6rem 0 0 0;
+  border-top: 1px solid #ddd;
+  padding: 1.5rem 0;
+}
+.pricing__card__list {
+  list-style-type: none;
+}
+.pricing__card__list__item {
+  padding: 1rem;
+  color: #9e9e9e;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+.pricing__card__btn {
+  position: relative;
+  background-color: #096cfd;
+  color: #fff;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  z-index: 1;
+}
+.pricing__card__btn::before {
+  content: "";
+  height: 100%;
+  width: 0%;
+  background-color: #3763eb;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  z-index: -1;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+.pricing__card__btn:hover::before {
+  width: 100%;
+  opacity: 1;
+  visibility: visible;
+}
+.pricing__card__btn:hover {
+  color: #fff !important;
+}
+
+.pricing__card__item:hover
+  > .pricing__card__list__box
+  > .pricing__card__list
+  > .pricing__card__list__item {
+  color: #fff;
+}
+.pricing__card__item:hover > .pricing__card__btn {
+  background-color: #fff;
+  color: #3763eb;
+}
+.pricing__card__item:hover {
+  background-color: #3763eb;
+  color: #fff;
+}
+/* ////// ==== >>>> banner */
+.banner {
+  background-image: url(https://i.ibb.co/F32HmJp/free-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 25rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-size: 1.6rem;
+}
+.banner::before {
+  content: "";
+  background-color: rgba(9, 108, 253, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+}
+.banner__content {
+  text-align: center;
+  position: relative;
+  z-index: 9;
+  color: #fff;
+}
+.banner__sub {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.banner__main {
+  text-transform: capitalize;
+  margin: 1.5rem 0;
+}
+.banner__divider {
+  border: none;
+  width: 4rem;
+  height: 0.2rem;
+  background-color: #fff;
+  margin: 0 auto;
+}
+.banner__text {
+  padding: 0 70rem;
+  line-height: 2.5rem;
+  margin: 3rem 0;
+}
+.banner__btn {
+  color: #096cfd;
+  background-color: #fff;
+  margin-top: 2rem;
+  position: relative;
+  transition: all 0.4s;
+  z-index: 1;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  border: 1px solid transparent;
+}
+.banner__btn::before {
+  content: "";
+  height: 100%;
+  width: 0%;
+  background-color: #3763eb;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  transition: all 0.4s;
+  z-index: -1;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  opacity: 0;
+  visibility: hidden;
+}
+.banner__btn:hover::before {
+  width: 100%;
+  opacity: 1;
+  visibility: visible;
+}
+.banner__btn:hover {
+  border: 1px solid #fff;
+  color: #fff;
+}
+/* ////// ==== >>>>>  */
+.sign {
+  background-color: #f8f9fa;
+  padding: 5rem 0;
+}
+.sign-up {
+  display: flex;
+  justify-content: space-between;
+}
+.sign-up__left {
+  flex-basis: 60%;
+  background-color: #3763eb;
+  color: #fff;
+  padding: 4rem;
+}
+.sign-up__left__main {
+  text-transform: capitalize;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.sign-up__left__text {
+  font-size: 1.6rem;
+  margin: 2rem 0 3rem 0;
+}
+.sign-up__email {
+  padding: 1rem 1.5rem;
+  margin-right: 2rem;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border: 1px solid #3763eb;
+}
+.sign-up__email:focus-visible {
+  outline: none;
+}
+.sign-up__btn {
+  background-color: #3763eb;
+  border: 1px solid #fff;
+  color: #fff;
+}
+.get__start {
+  flex-basis: 35%;
+  background-color: #fff;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.get__start__main {
+  font-size: 2.5rem;
+}
+.get__start__btn {
+  width: 35%;
+  color: #fff;
+  background-color: #3763eb;
+}
